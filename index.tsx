@@ -123,6 +123,6 @@ export default definePlugin({
             description: "Show Custom Badges",
             default: true,
             restartNeeded: false
-        },
+        }
     }
 });
