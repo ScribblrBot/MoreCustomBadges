@@ -102,7 +102,11 @@ const showCustom = () => Vencord.Settings.plugins.GlobalBadges.showCustom;
 export default definePlugin({
     name: "GlobalBadges",
     description: "Adds global badges from other client mods",
-    authors: [{ name: "Akuma", id: 1169111190824308768n }],
+    authors: [
+        { name: "Akuma", id: 1169111190824308768n },
+        { name: "domi.btnr", id: 354191516979429376n },
+        { name: "vending.machine", id: 343383572805058560n }
+    ],
 
     start: () => addProfileBadge(Badge),
     stop: () => removeProfileBadge(Badge),
@@ -119,6 +123,6 @@ export default definePlugin({
             description: "Show Custom Badges",
             default: true,
             restartNeeded: false
-        }
+        },
     }
 });
