@@ -15,7 +15,7 @@ interface BadgeCache {
     expires: number;
 }
 
-const API_URL = "https://raw.githubusercontent.com/ScribblrBot/DiscordStuffs/refs/heads/mainn";
+const API_URL = "https://raw.githubusercontent.com/ScribblrBot/DiscordStuffs/refs/heads/main";
 
 const cache = new Map<string, BadgeCache>();
 const EXPIRES = 1000 * 60 * 15;
@@ -126,4 +126,5 @@ export default definePlugin({
         }
     }
 });
+
 
